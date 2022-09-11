@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
-* function main - prints the size of various data types
-* Return: 0 if exited.
-*/
+ * function main - prints the size of various data types
+ * Return: 0 if exited.
+ */
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
