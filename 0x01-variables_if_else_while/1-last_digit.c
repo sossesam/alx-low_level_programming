@@ -6,7 +6,7 @@
 /**
  * main - checks if number equals 0 is greter tha or less to 6
  * Return: returns 0
- */ 
+ */
 int main(void)
 {
 	int n;
@@ -18,15 +18,17 @@ int main(void)
 	/* your code goes there */
 	l = n % 10;
 
-	if (n > 5){
+	if (n > 5)
+	{
 		printf("Last digit of %d is %d and is greater than 5", n, l);
 	}
-	else if (n == 0){
-		printf("Last digit of %d is %d  and is 0",n,l);
+	else if (n == 0)
+	{
+		printf("Last digit of %d is %d  and is 0", n, l);
 	}
-	else {
-		printf("Last digit of %d is %d and is less than 6 and not 0",n,l);
-	}	
+	else
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, l);
+	}
 	return (0);
-	
-}
+	}
