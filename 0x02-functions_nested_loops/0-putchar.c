@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * Main- just
- * Return - return desription
+ * main	- a funnction that prints _putchar
+ * Return: return desription
  */
 
 int main(void)
