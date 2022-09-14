@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * Main- just
@@ -7,12 +8,6 @@
 
 int main(void)
 {
-	putchar("_putchar");
-	return (0)
-
-
-
-
-
-
+	putchar(_putchar);
+	return (0);
 }
