@@ -8,5 +8,5 @@ void print_alphabet(void)
 	{
 		putchar(ch);
 	}
-       	return(1);
+       	
 }
