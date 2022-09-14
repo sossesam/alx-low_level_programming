@@ -8,6 +8,6 @@
 
 int main(void)
 {
-	printf(putchar());
+	printf(many());
 	return (0);
 }
