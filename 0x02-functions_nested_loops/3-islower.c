@@ -5,11 +5,12 @@
  *
  * Return: returns 0
  *
- * c: the parameter c is the ascii number 
+ * @c: character to check
  */
 
 int _islower(int c)
 {
+
 	if (c >= 97 && c <= 122)
 	{
 		return (1);
