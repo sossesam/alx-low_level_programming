@@ -2,7 +2,7 @@
 
 /**
  *
- *print_times_table - prints times table
+ * print_times_table - prints times table
  * @n: parameter
  * Return: void
  */
