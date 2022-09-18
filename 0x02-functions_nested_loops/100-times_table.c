@@ -13,10 +13,10 @@ void print_times_table(int n)
 
 	vertical = 0;
 
-	while (vertical < n)
+	while (vertical <= n)
 	{
 
-		if (n <= 0 || n > 15)
+		if (n < 0 || n > 15)
 		{
 			break;
 		}
