@@ -13,7 +13,7 @@ void times_table(void)
 
 	
 	vertical = 0;
-	horinzontal = 0;
+	horizontal = 0;
 
 
 	while (vertical < 10)
@@ -24,7 +24,7 @@ void times_table(void)
 
 			result = vertical * horizontal;
 
-			_putchar(result)
+			_putchar(result);
 
 			if (horizontal < 10)
 			{
