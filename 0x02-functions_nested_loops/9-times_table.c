@@ -24,12 +24,12 @@ void times_table(void)
 
 			result = vertical * horizontal;
 
-			if (result == 0)
+			if (result == 0 && horizontal == 0 )
 			{
 
 				_putchar(result + '0');
 
-			}else if (result < 10)
+			}else if (result < 10 && horizontal > 0)
 			{
 				_putchar(' ');
 				_putchar('0' + result);
