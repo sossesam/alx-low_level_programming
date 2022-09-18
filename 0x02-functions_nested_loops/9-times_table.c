@@ -13,11 +13,11 @@ void times_table(void)
 
 	
 	vertical = 0;
-	horizontal = 0;
 
 
 	while (vertical < 10)
 	{
+		horizontal = 0;
 		while (horizontal < 10)
 		{
 			int result;
