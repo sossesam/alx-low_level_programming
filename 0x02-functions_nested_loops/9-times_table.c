@@ -24,7 +24,7 @@ void times_table(void)
 
 			result = vertical * horizontal;
 
-			_putchar('0' + result);
+			return(result);
 
 			if (horizontal < 10)
 			{
