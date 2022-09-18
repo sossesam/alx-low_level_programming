@@ -16,12 +16,12 @@ void print_times_table(int n)
 	while (vertical < n)
 	{
 
-		if (n < 0 || n > 15)
+		if (n <= 0 || n > 15)
 		{
 			break;
 		}
 		horizontal = 0;
-		while (horizontal < n)
+		while (horizontal <= n)
 		{
 			int result;
 
@@ -31,12 +31,12 @@ void print_times_table(int n)
 			{
 				_putchar(result + '0');
 			}
-			else if (result < n && horizontal > 0)
+			else if (result < 10 && horizontal > 0)
 			{
 				_putchar(' ');
 				_putchar('0' + result);
 			}
-			else if (result >= n )
+			else if (result >= 10 )
 			{
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
