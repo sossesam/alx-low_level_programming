@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * main - prime numbers
+ * main - prime numbers o
  *
  * Return: Always 0.
  */
