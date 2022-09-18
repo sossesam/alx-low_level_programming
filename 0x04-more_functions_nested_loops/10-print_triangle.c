@@ -1,4 +1,4 @@
-#include
+#include "main.h"
 
 /**
  * print_triangle - check for a digit
