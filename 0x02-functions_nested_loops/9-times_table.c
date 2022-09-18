@@ -24,7 +24,15 @@ void times_table(void)
 
 			result = vertical * horizontal;
 
-			return(result);
+			if (result < 10)
+			{
+
+			_putchar(result + '0');
+			}else if (result >= 10)
+			{
+				_putchar((result / 10) + '0');
+				_putchar((result % 10) + '0');
+			}
 
 			if (horizontal < 10)
 			{
