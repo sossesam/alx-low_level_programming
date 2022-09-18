@@ -1,9 +1,4 @@
 #include "main.h"
-/**
- * print_diagonal - check for a digit another
- * @n : number of \\ to be printed
- * Return:void done
- */
 
 /**
  * print_square - check for a digit
@@ -29,6 +24,8 @@ void print_square(int n)
 		i++;
 	}
 	if (i == 0)
+	{
 		_putchar('\n');
+	}
 
 }
