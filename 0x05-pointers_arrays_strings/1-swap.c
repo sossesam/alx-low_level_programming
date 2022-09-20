@@ -3,6 +3,10 @@
 /**
  * swap_int- funnction to swap variabbles
  *
+ * @a: parameter a
+ *
+ * @b: parameter b
+ *
  * Return: returns a funnction
  */
 
