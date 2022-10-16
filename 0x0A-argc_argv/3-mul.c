@@ -4,9 +4,9 @@
 
 /**
  * _atoi - converts a string to an integer
+ * main- multiplies two numbers
  * @argc: string to be converted
  * @argv: pointer to string
- *
  * Return: the int converted from the string
  */
 
