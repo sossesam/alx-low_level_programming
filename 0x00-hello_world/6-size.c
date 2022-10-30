@@ -1,12 +1,10 @@
 #include <stdio.h>
-
-/** main- Write a C program that prints the size of various types on the computer 
+/**main - Write a C program that prints the size of various types 
  * 
  * 
  * Return: Always returns (0)
  */
-
-int main()
+int main(void)
 {
 printf("Size of a char: %d byte(s)\n", sizeof(char));
 printf("Size of an int: %d byte(s)\n", sizeof(int));
