@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/** main - Write a C program that prints the size of various types
+/** 
+ * main - Write a C program that prints the size of various types
  * Return: Always returns (0)
  */
 int main(void)
