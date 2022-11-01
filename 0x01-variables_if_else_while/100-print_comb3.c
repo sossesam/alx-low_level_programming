@@ -10,8 +10,10 @@ int main()
         for(unit = tens; unit < 9; unit++){
             putchar(tens + '0');
             putchar(unit + '1');
-            putchar(',');
-            putchar(' ');
+            if(unit + tens < 16){
+                putchar(',');
+                putchar(' ');
+            }
         }
     }
     putchar('\n');
