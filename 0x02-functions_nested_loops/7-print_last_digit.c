@@ -2,14 +2,16 @@
 
 int print_last_digit(int c)
 {
-    if(c < 0)
+    long a;
+    a = c;
+    if(a < 0)
     {
-        c = c * (-1);
+        a = a * (-1);
     }
-    if(c > 10)
+    if(a > 10)
     {
-        c = c % 10;
+        a = a % 10;
     }
-    _putchar(c + '0');
-    return (c);
+    _putchar(a + '0');
+    return (a);
 }
