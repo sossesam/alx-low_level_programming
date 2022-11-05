@@ -13,17 +13,19 @@ void times_table(void)
         {
             result= number * numberz;
 
+            if(numberz > 0){
+                _putchar(' ');
+               
+            }
             if(result < 10)
             {
-                 _putchar(' ');
                  _putchar(' ');
                  _putchar('0' + result);
             }
             if(result >= 10)
             {
-                 _putchar(' ');
                  _putchar('0'+ (result / 10));
-                 _putchar('0' + (result % 10));
+                 _putchar('0' +  (result % 10));
             }
              
 
