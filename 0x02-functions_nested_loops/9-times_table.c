@@ -12,12 +12,17 @@ void times_table(void)
         for(numberz = 0; numberz < 10; numberz++)
         {
             result= number * numberz;
+            
+            if(numberz < 1 )
+            {
+                 _putchar('0' + result);
+            }
 
             if(numberz > 0){
                 _putchar(' ');
                
             }
-            if(result < 10)
+            if(result < 10 && numberz > 0)
             {
                  _putchar(' ');
                  _putchar('0' + result);
@@ -33,6 +38,7 @@ void times_table(void)
              {
                  _putchar(',');
              }
+            
             
 
             
