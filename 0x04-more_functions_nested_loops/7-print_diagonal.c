@@ -21,4 +21,10 @@ void print_diagonal(int n)
         x++;
 
     }
+
+    if(n <= 0)
+    {
+        _putchar('\n');
+    }
+
 }
