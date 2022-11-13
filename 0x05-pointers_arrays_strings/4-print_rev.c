@@ -17,8 +17,10 @@ void print_rev(char *s)
 
     for(x = slen; x >= 0; x--)
     {
+
       _putchar(*s);
       s--;
+      
     }
     _putchar('\n');
 } 
