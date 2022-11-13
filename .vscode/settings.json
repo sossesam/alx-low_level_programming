@@ -2,6 +2,7 @@
     "files.associations": {
         "*html": "html",
         "*.html": "html",
-        "cstdlib": "c"
+        "cstdlib": "c",
+        "sstream": "c"
     }
 }
