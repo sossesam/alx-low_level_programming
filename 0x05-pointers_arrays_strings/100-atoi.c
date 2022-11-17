@@ -3,7 +3,6 @@
 
 int _atoi(char *s)
 {
-    // int length;
     int space;
     int sign;
     int c;
