@@ -1,37 +1,22 @@
 #include "main.h"
 
-int length(char *ptr);
+
+/**
+ * _strcmp - compares two strings
+ * @s1: input parameter
+ * @s2: input parameter
+ *
+ * Return: 0 if equal or b if is different
+ */
 int _strcmp(char *s1, char *s2)
 {
-    int first;
-    int second;
-    int result;
+	int a = 0;
+	int b = 0;
 
-    first = length(s1);
-    second = length(s2);
-
-    if ( first < second)
-    {
-        result = -15;
-
-    }else if( first > second)
-    {
-        result = 15;
-    }else{
-        result = 0;
-    }
-
-    return (result);
-}
-
-int length(char *ptr)
-{
-    int x;
-
-    x = 0;
-
-    while(*(ptr + x) != '\0'){
-        x++;
-    }
-    return (x);
+	while (s1[a] != '\0' && b == 0)
+	{
+		b = s1[a] - s2[a];
+		a++;
+	}
+	return (b);
 }
