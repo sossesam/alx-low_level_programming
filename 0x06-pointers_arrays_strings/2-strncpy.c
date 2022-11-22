@@ -26,7 +26,6 @@ char *_strncpy(char *dest, char *src, int n)
         
         b++;
     }
-        *(dest + b) = '\0';
  
 
 
