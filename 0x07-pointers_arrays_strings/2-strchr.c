@@ -3,6 +3,9 @@
 char *_strchr(char *s, char c)
 {
     int i;
+    
+    
+
    
     
 
@@ -13,10 +16,9 @@ char *_strchr(char *s, char c)
         
         if(*(s + i) == c)
         {
-         return (s + i);
+            return(s + i);
         }
         i++;
-        
     }
-    return ((s + i));
+    return (0);
 }
