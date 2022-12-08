@@ -4,11 +4,20 @@ char *_strstr(char *haystack, char *needle)
 {
     int i;
     int count;
-    int pass ;
     char word[] = "";
     int start;
     int x;
+    int q;
     i = 0;
+
+    for(q = 0; *(haystack + q) != '\0'; q++)
+    {
+        if (*(haystack + q) == *(needle + 0))
+        {
+            start = q;
+            break;
+        }
+    }
 
     while(*(needle + i) != '\0')
     {
@@ -17,17 +26,13 @@ char *_strstr(char *haystack, char *needle)
 
         while(*(haystack + count) == *(needle + i))
         {
-            if(count == 0)
-            {
-                start = i;
-            }
             word[count] = *(haystack + count);
             count += 1;
         }
         i += 1;
     }
-    pass = 0;
-    x =0;
+
+    x = 0;
 
     while(word[x] == *(needle + x))
     {
