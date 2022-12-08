@@ -19,7 +19,7 @@ char *_strstr(char *haystack, char *needle)
         }
     }
 
-    while(*(needle + i) != '\0')
+    while(*(needle + i) != ' ')
     {
         
         count = 0;
