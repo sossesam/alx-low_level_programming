@@ -31,8 +31,8 @@ char *_strstr(char *haystack, char *needle)
 
     while(word[x] == *(needle + x))
     {
-        return (needle + start);
+        return (haystack + start);
         start += 1;
     }
-    return (needle + start);
+    return (haystack + start);
 }
