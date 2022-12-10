@@ -13,6 +13,5 @@ void print_diagsums(int *a, int size)
         forward_sum += a[(i * size) + i];
         backward_sum = backward_sum + a[(size * i) + ((size - i) - 1)];
     }
-    
     printf("%d, %d \n", forward_sum, backward_sum);
 }
