@@ -1,22 +1,41 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * print_diagsums - Prints the sum of two diagonals
+ * @a: array
+ * @size: size of array
+ */
 
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	int k = size - 1;
-	int sum = 0;
-	int res = 0;
+    int i;
+    int j;
+    int forward_sum;
+    int backward_sum;
+    backward_sum = 0;
+    forward_sum = 0;
+    for(i = 0; i < size; i++)
+    {
+        for(j = 0; j < size; j++)
+        {
+            
+            if(i == j)
+            {
+                forward_sum += a[(i * size) + j];
+            }
+        }
+    }
+    for(i = size; i > 0; i--)
+    {
 
-	for (j = 0; j < size; j++)
-	{
-		     i = (j * size) + j;
-		sum += a[i];
-	}
-	for (j = 0; j < size;  j++)
-	{
-		i = (j * size) + (k - j);
-     res += a[i];
-	}
-	     printf("%d, %d\n", sum, res);
+        for(j = size; j > 0; j--)
+        {
+            
+            if(i == j)
+            {
+                backward_sum = backward_sum + a[(size * i) -((size - 1) - j)];
+            }
+        }
+    }
+    printf("%d, %d \n", forward_sum, backward_sum);
 }
