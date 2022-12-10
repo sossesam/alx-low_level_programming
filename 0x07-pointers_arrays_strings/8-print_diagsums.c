@@ -34,5 +34,5 @@ void print_diagsums(int *a, int size)
         }
     }
     
-    printf("%d , %d\n", forward_sum, backward_sum);
+    printf("%d, %d \n", forward_sum, backward_sum);
 }
