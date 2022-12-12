@@ -1,14 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-/**
- * main - print its name
- * @argc: argument count
- * @argv: argument vector for values
- *
- * Return: Always 0 (Success)
- */
-int main(int argc, char **argv[])
+
+int main(int argc, char *argv[])
 {
     int i;
     int cent;
@@ -22,6 +16,11 @@ int main(int argc, char **argv[])
     }else
     {
         cent = atoi(argv[1]);
+        if(cent <= 0)
+        {
+            cent = 0;
+        }
+
             while (cent != 0)
         {
             if(cent >= 25)
@@ -50,7 +49,6 @@ int main(int argc, char **argv[])
             }else{
                 count = count + 0;
             }
-
        }
         printf("%d\n", count);
         return(0);
