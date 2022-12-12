@@ -1,56 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
 
-int main(int argc, char *argv[])
+/**
+ * main - function to print out the change that needs to given
+ * @argc: number of arguments to be passed
+ * @argv: number of variables to calculate
+ * Return: always 0 for sucess
+ */
+
+int main(int argc, char **argv)
 {
-    int i;
-    int cent;
-    int count;
-    count = 0;
-    i = 0;
-    if(argc != 2)
-    {
-        printf("Error \n");
-        return(1);
-    }else
-    {
-        cent = atoi(argv[1]);
-        if(cent <= 0)
-        {
-            cent = 0;
-        }
+	int total, change;
 
-            while (cent != 0)
-        {
-            if(cent >= 25)
-            {
-                cent = cent - 25;
-                count = count + 1;
-            }else if(cent >= 10)
-            {
-                count = count +1;
-                cent = cent - 10;
-            }
-            else if(cent >= 5)
-            {
-                count = count +1;
-                cent = cent - 5;
-            }
-            else if(cent >= 2)
-            {
-                count = count +1;
-                cent = cent - 2;
-            }
-            else if(cent >= 1)
-            {
-                count = count +1;
-                cent = cent - 1;
-            }else{
-                count = count + 0;
-            }
-       }
-        printf("%d\n", count);
-        return(0);
- }
- }
+	if (argc < 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	change = atoi(argv[1]);
+
+	for (total = 0; change > 0; total++)
+	{
+		if (change - 25 >= 0)
+			change = change - 25;
+		else if (change - 10 >= 0)
+			change = change - 10;
+		else if (change - 5 >= 0)
+			change = change - 5;
+		else if (change - 2 >= 0)
+			change = change - 2;
+		else if (change - 1 >= 0)
+			change = change - 1;
+	}
+	printf("%d\n", total);
+	return (0);
+}
