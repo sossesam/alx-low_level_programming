@@ -8,6 +8,10 @@ char *str_concat(char *s1, char *s2)
     len_s1 = 0;
     len_s2 = 0;
     t_len = len_s1 + len_s2;
+    if(s1 == NULL && s2 == NULL)
+    {
+        return NULL;
+    }
 
     for (i = 0; s1[i] != '\0'; i++)
     {
