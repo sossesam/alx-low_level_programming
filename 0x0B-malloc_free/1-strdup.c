@@ -11,7 +11,7 @@ char *_strdup(char *str)
     {
         count = count + 1;
     }
-    if(count == NULL)
+    if(count == 0)
     {
         return NULL;
     }
