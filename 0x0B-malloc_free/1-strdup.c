@@ -11,14 +11,14 @@ char *_strdup(char *str)
     {
         count = count + 1;
     }
-    if(count == 0)
+    if(str == NULL)
     {
         return NULL;
     }
     else {
-        if(str == NULL)
+        if(count == 0)
         {
-            return NULL;
+            str[count] = '\0';
         }
     string = malloc(sizeof(char) * count);
 
