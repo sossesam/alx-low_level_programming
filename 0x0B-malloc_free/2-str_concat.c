@@ -35,4 +35,5 @@ char *str_concat(char *s1, char *s2)
     }
     array[k + l] = '\0';
 return array;
+free(array);
 }
