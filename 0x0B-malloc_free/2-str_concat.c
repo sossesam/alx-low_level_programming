@@ -26,11 +26,15 @@ char *str_concat(char *s1, char *s2)
 
 
     s3 = malloc(sizeof(char) * (len_s3 + 1));
-
+    if(s3 == NULL)
+    {
+        return NULL;
+    }
+    else{
     s3 = _strcat(s3, s1);
      s3 = _strcat(s3, s2);
      s3[len_s3 + 1] = '\0';
-
+    }
     return s3;
 }
 
