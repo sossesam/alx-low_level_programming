@@ -4,36 +4,23 @@
 
 int **alloc_grid(int width, int height)
 {
-    int **first_step;
+    int **array;
     int i, j;
 
-    if(width <= 0|| height <= 0)
-    {
+    array = malloc(sizeof(int) * width);
+
+    if(array == NULL){
         return NULL;
     }
-
-    first_step = malloc(sizeof(int *) * width);
-    if(first_step == NULL)
-    {
-        return NULL;
-    }
-
-    for(i = 0; i < height; i++)
-    {
-        first_step[i] = malloc((sizeof(int) * width) + 1);
-        if (first_step[i] == NULL)
-		{
-			for (i = i - 1; i >= 0 ; i--)
-			{
-				free(first_step[i]);
-			}
-			free(first_step);
-			return (NULL);
-		}
-        for(j = 0; j < width; j++)
-        {
-            first_step[i][j] = 0;
+    else{
+        if(width  == 0 || height == 0){
+            return NULL;
+        }else{for(i = 0; i < width; i++){
+        for(j =  0; j < height; j++){
+            array[i] = malloc(sizeof(int) * height);
+            array[i][j] = 0;
         }
-    }
-    return first_step;
+
+    }}}
+    return array;
 }

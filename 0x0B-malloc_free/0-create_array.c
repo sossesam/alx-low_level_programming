@@ -1,31 +1,25 @@
 #include "main.h"
 #include <stdlib.h>
 
-char *create_array(unsigned int size, char c)
-{
-    char *array;
-    unsigned int i;
+char *create_array(unsigned int size, char c){
+	//first we declare the new array
+	char *array;
+	unsigned int i;
+	//then we allocate the memory with malloc to the size  provided as parameter
+	
 
-    i = 0;
+	//now to insert the char c into the array
 
-        array = malloc(sizeof(char) * size);
-        if (size == 0)
-			{
-				return NULL;
-			}
-            else
-			{
-                if(array == NULL){
-                    return NULL;
-                }
-				while (i < size)
-				{
-					array[i] = c;
-					i++;
-				}
-			}
-return (array);
+	//if the size is not equal to zero 
+	if(size > 0){
+		array = malloc(size * (sizeof(char)));
+		for(i = 0; i < size; i++){
+		array[i] = c;
+	}
+	return array;
+	}else{
+		return NULL;
+	}
+	
+	
 }
-
-    
-
