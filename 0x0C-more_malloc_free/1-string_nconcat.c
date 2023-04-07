@@ -47,4 +47,7 @@ s3[c] = s2[d];
 
 s3[c] = '\0';
 return (s3);
+free(s1);
+free(s2);
+free(s3);
 }
