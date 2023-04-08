@@ -35,7 +35,10 @@ s3 = malloc((a + b + 1) * sizeof(char));
 else
 s3 = malloc((a + n + 1) * sizeof(char));
 if (s3 == NULL)
+{
 return (NULL);
+free(s3);
+}
 
 for (c = 0; c < a; c++)
 s3[c] = s1[c];
