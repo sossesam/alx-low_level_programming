@@ -10,24 +10,25 @@
  * Return: NULL if failed.
  */
 
-void *_calloc(unsigned int nmemb, unsigned int size){
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
 
 void *array;
 char *zero;
 unsigned int a;
 
-if(nmemb <= 0 || size <= 0)
-return NULL;
+if (nmemb <= 0 || size <= 0)
+return (NULL);
 
 zero = malloc(nmemb * size);
 
 array = zero;
-if(zero == 0){
-    return NULL;
-}
+if (zero == 0)
+return (NULL);
 
-for(a = 0; a <(nmemb * size); a++){
-    zero[a] = 0;
-}
-return array;
+
+for (a = 0; a < (nmemb * size); a++)
+zero[a] = 0;
+
+return (array);
 }
