@@ -12,7 +12,8 @@
  * Return: the pointer to the newly created array
  */
 
-int *array_range(int min, int max){
+int *array_range(int min, int max)
+{
 int *darray;
 int a;
 
@@ -20,13 +21,11 @@ if (min > max)
 return (NULL);
 
 darray = malloc(sizeof(int) * (max - min + 1));
-if(darray == 0)
+if (darray == 0)
 return (NULL);
 
-for(a = 0; min <= max; min++, a++){
+for (a = 0; min <= max; min++, a++)
 darray[a] = min;
-}
 
-return darray;
-
+return (darray);
 }
