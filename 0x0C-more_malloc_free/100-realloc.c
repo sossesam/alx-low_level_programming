@@ -40,12 +40,13 @@ return (NULL);
 
 if (new_size < old_size)
 {
-for (a = 0; a < new_size; a++)
-	new[a] = old[a];
-	return (new);
+    for (a = 0; a < new_size; a++)
+    {
+        new[a] = old[a];
+        return (new);
+    }
 }
 
 free(ptr);
 return (new);
-
 }
