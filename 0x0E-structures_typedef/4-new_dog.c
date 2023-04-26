@@ -2,10 +2,19 @@
 #include <stdlib.h>
 #include "dog.h"
 
-
-dog_t *new_dog(char *name, float age, char *owner){
-    int a, b, c;
-	dog_t *doggo;
+/**
+ * new_dog - pointer the the function
+ * struct doggo - pointer to dogs
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: name of owner
+ *
+ * Return: a new dog structure
+*/
+dog_t *new_dog(char *name, float age, char *owner)
+{
+int a, b, c;
+dog_t *doggo;
 
 	for (a = 0; name[a] != '\0'; a++)
 		;
@@ -42,7 +51,4 @@ dog_t *new_dog(char *name, float age, char *owner){
 		doggo->owner[c] = owner[c];
 	doggo->owner[c] = owner[c];
 	return (doggo);
-
-
-
 }
