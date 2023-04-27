@@ -33,5 +33,6 @@ int main(void)
     int array[5] = {28734, 236745, 234, 4, 2378};
 
 	array_iterator(array, 5, NULL);
+    array_iterator(NULL, 5, &print_elem);
 	return (0);
 }
