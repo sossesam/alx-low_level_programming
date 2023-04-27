@@ -2,11 +2,11 @@
 #include "function_pointers.h"
 
 /**
- * print_elem - prints an integer
- * @elem: the integer to print
- *
- * Return: Nothing.
- */
+* print_elem - prints an integer
+* @elem: the integer to print
+*
+* Return: Nothing.
+*/
 void print_elem(int elem)
 {
     printf("%d\n", elem);
@@ -34,5 +34,6 @@ int main(void)
 
     array_iterator(array, 5, &print_elem);
     array_iterator(array, 5, &print_elem_hex);
+    array_iterator(array, 5, NULL);
     return (0);
 }
