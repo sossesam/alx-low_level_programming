@@ -30,10 +30,8 @@ void print_elem_hex(int elem)
  */
 int main(void)
 {
-    int array[5] = {0, 98, 402, 1024, 4096};
+    int array[5] = {28734, 236745, 234, 4, 2378};
 
-    array_iterator(array, 5, &print_elem);
-    array_iterator(array, 5, &print_elem_hex);
-    array_iterator(array, 5, NULL);
-    return (0);
+	array_iterator(array, 5, NULL);
+	return (0);
 }
