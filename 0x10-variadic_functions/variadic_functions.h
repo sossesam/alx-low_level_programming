@@ -2,10 +2,16 @@
 #define VARIADIC_FUNCTION_H
 #include <stdarg.h>
 
+/**
+ * struct select - defines representing a data type
+ * @st: the data type
+ * @func: function that prints data type in correct fmt
+ */
+
 typedef struct select
 {
-    char *st;
-    void (*func)(va_list list);
+char *st;
+void (*func)(va_list list);
 } identifier;
 
 int sum_them_all(const unsigned int n, ...);
