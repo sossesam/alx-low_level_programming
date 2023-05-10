@@ -17,7 +17,7 @@ unsigned int i;
 
 if (separator == NULL)
 {
-separator="";
+separator = "";
 }
 else
 {
@@ -28,9 +28,9 @@ for (i =  0; i < n; i++)
 {
 
 printf("%d", va_arg(param, int));
-if (i < n - 1 && separator != 0)
+if (i < n - 1)
 
-printf("%c ", *separator);
+printf("%c", *separator);
 
 
 }
