@@ -29,13 +29,13 @@ for (i =  0; i < n; i++)
 
 printf("%d", va_arg(param, int));
 if (i < n - 1 && separator != 0)
-if (separator == NULL)
-separator = "";
 printf("%c", *separator);
 
-
-
+if (i < n - 1 && separator == 0)
+separator = "";
+printf("%c", *separator);
 }
+
 printf("\n");
 va_end(param);
 }
