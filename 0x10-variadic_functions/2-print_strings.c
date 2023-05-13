@@ -29,7 +29,7 @@ if (str == NULL)
 str = "(nil)";
 }
 printf("%s", str);
-if (i < n)
+if (i < n - 1)
 {
 printf("%s", separator);
 }
