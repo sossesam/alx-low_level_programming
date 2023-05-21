@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
  * main - check the code
@@ -10,5 +11,6 @@
 int main(void)
 {
     printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
+
     return (0);
 }
