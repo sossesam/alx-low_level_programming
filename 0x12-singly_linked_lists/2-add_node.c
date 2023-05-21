@@ -3,9 +3,6 @@
 #include <stdio.h>
 #include "lists.h"
 
-
-
-
 list_t *add_node(list_t **head, const char *str){
    list_t *new_struc;
    unsigned int i;
@@ -20,7 +17,7 @@ list_t *add_node(list_t **head, const char *str){
         i++;
     }
     new_struc->str = strdup(str);
-    if(str = NULL){
+    if(str == NULL){
         free(new_struc);
         return NULL;
     }
