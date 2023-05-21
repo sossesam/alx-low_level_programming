@@ -4,7 +4,7 @@
 
 
 /**
- * print_listint - function to print all elements of list
+ * listint_len - function to print all elements of list
  * @h: pointer to the elements of lists
  * Return: count of the nodes
  */
