@@ -7,11 +7,12 @@
  * Return: the value stored in the head node or 0
  */
 
-int pop_listint(listint_t **head){
+int pop_listint(listint_t **head)
+{
 listint_t *pop;
 int num;
 
-if(*head != NULL)
+if (*head != NULL)
 {
 
 pop = (*head);
