@@ -15,16 +15,16 @@ listint_t *current;
 new = malloc(sizeof(listint_t));
 if (new == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 new->n = n;
 new->next = NULL;
 
 
 if (*head == NULL)
-    *head = new;
-else if((*head)->next == NULL)
-    (*head)->next = new;
+*head = new;
+else if ((*head)->next == NULL)
+(*head)->next = new;
 
 
 else
@@ -36,5 +36,5 @@ current->next = new;
 }
 
 
-return(new);
+return (new);
 }
