@@ -12,7 +12,7 @@ int sum, num;
 sum = 0;
 
 
-while(head != NULL)
+while (head != NULL)
 {
 num = head->n;
 sum = sum + num;
