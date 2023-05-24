@@ -17,12 +17,13 @@ return (NULL);
 }
 while (head->next != NULL)
 {
-if(count == index)
+if (count == index)
 {
 current = head;
+return (current);
 }
 head = head->next;
 count++;
 }
-return (current);
+return (head);
 }
