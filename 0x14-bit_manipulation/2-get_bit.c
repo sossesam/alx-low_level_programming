@@ -11,5 +11,9 @@ while(i < index)
     i++;
 }
 a = n & 1;
-return (a);
+if(n > 0){
+    return (a);
+}else{
+    return (-1);
+}
 }
