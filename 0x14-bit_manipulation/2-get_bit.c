@@ -11,7 +11,7 @@ while(i < index)
     i++;
 }
 a = n & 1;
-if(n > 0){
+if(n > 0 && i <= index){
     return (a);
 }else{
     return (-1);
