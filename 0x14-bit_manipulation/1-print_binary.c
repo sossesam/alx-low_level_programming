@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+ * print_binary- number to binary
+ * @n: given number
+ * Return: its a void
+*/
 
 void print_binary(unsigned long int n){
 unsigned long int a;
