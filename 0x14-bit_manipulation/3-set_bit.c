@@ -25,9 +25,7 @@ return (a);
 int set_bit(unsigned long int *n, unsigned int index)
 {unsigned long int check, temp;
 
-unsigned int i;
-int a;
-i = 0;
+
 if ((sizeof(unsigned long int) * 8) < index)
 return (-1);
 
