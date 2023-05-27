@@ -31,5 +31,5 @@ if(!check){
 temp = temp << index;
 }
 *n = *n + temp;
-return (*n);
+return (1);
 }
