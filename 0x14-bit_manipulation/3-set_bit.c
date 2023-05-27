@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * get_bit- get the nth byte
- * set_bit- sets the nnth byte
  * @n: number
  * @index: position of byte
  * Return: return 1 if successful
@@ -27,6 +26,12 @@ return (a);
 return (a);
 }
 
+/**
+ * set_bit- sets the nnth byte
+ * @n: number
+ * @index: position of byte
+ * Return: return 1 if successful
+*/
 
 int set_bit(unsigned long int *n, unsigned int index)
 {unsigned long int check, temp;
@@ -38,7 +43,7 @@ return (-1);
 
 temp = 1;
 check = get_bit(*n, index);
-if(!check)
+if (!check)
 {
 temp = temp << index;
 }
