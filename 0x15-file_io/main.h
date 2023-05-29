@@ -1,6 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-#define O_RDONLY 0x0000
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdlib.h>
