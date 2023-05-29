@@ -2,6 +2,13 @@
 #include <unistd.h>
 #include <fcntl.h>
 
+/**
+ * ssize_t read_textfile- reads a file
+ * @filename: address of the file
+ * @letters: number of bytes
+ *
+ * Return: returns bytes
+*/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 char *buf = NULL;
