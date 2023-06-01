@@ -30,7 +30,7 @@ bytes = read(fd, buf, letters);
 if (bytes == -1)
 return (free(buf), 0);
 
-buf[letters] = '\0';
+
 bytes = write(STDOUT_FILENO, buf, bytes);
 if (bytes == -1)
 return (free(buf), 0);
