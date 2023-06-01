@@ -13,7 +13,7 @@ int reader, output, count;
 if (filename == NULL)
 return (-1);
 
-reader = open(filename, O_WRONLY | O_APPEND | O_TRUNC);
+reader = open(filename, O_RDWR | O_APPEND);
 
 if (reader == -1)
 return (-1);
