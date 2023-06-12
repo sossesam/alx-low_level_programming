@@ -4,28 +4,37 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <unistd.h>
+#include <stdlib.h>
 
-extern int errno;
+
 
 int main()
 {
-	// if file does not have in directory
-	// then file foo.txt is created.
-	int fd = open("foo.txt", O_RDWR | O_CREAT);
+	int fd, fz, bytes,count;
+	char *buff;
+	fd = open("./text", O_CREAT | O_APPEND | O_RDWR, 0644);
+	fz = open("./text2", O_CREAT | O_APPEND | O_RDWR, 0644);
+	count = 0;
 
-	printf("fd = %d\n", fd);
 
-	if (fd == -1) {
-		// print which type of error have in a code
-		printf("Error Number % d\n", errno);
 
-		// print program detail "Success or failure"
-		perror("Program");
+	buff = malloc(sizeof(char) * BUFSIZ);
+	read(fd, buff, BUFSIZ);
+	while (buff[count] != '\0')
+	{
+		count++;
+
 	}
+	write(STDOUT_FILENO, buff, count);
+	bytes = write(fz, buff, count);
+	free(buff);
+	close(fz);
+	close(fd);
 
-    if(close(fd) == 0){
-        printf("programme closed\n");
-    }
 
-	return 0;
+	printf("Bytes: %d", bytes);
+
+
+
+	return (0);
 }
