@@ -2,7 +2,12 @@
     "files.associations": {
         "*html": "html",
         "*.html": "html",
+        "*.c": "c",
         "cstdlib": "c",
-        "sstream": "c"
+        "sstream": "c",
+        "__tree": "c",
+        "iomanip": "c",
+        "istream": "c",
+        "locale": "c"
     }
 }
