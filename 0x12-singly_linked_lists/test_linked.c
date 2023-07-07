@@ -19,9 +19,9 @@ void print_list(node_gt *head){
     if (temp == NULL){
         printf("NULL");
     }
-    
-    
-    
+
+
+
 }
 
 node_gt *create_node(int num){
@@ -29,7 +29,7 @@ node_gt *create_node(int num){
       temp = malloc(sizeof(node_gt));
       temp->value = num;
       temp->next = NULL;
-      
+
 
       return temp;
 }
@@ -46,7 +46,7 @@ node_gt *add_node(node_gt *list, int num){
     new_node = create_node(num);
     new_node->next = current;
     current= new_node;
-    
+
     return current;
 }
 
@@ -55,11 +55,11 @@ node_gt *add_node(node_gt *list, int num){
 int main(void){
 node_gt n1, n2, n3, n4;
 node_gt *head, *node;
-// for(i = 0; i < 25; i++){
-// node = create_node(i);
-// node->next = head;
-//  head = node;
-// }
+ for(int i = 0; i < 25; i++){
+ node = create_node(i);
+ node->next = head;
+  head = node;
+}
 
 head = add_node(head,14);
 head = add_node(head,99);
