@@ -24,5 +24,4 @@ res = (res << 1) +  *b - '0';
 b++;
 }
 return (res);
-
 }
