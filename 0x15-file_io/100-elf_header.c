@@ -2,10 +2,14 @@
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <string.h>
 
-#define ELF_MAGIC "\x7fELF"
+#define ELF_MAGIC "\x7f"
 
 int main(int argc, char *argv[]) {
+
+
+
   if (argc != 2) {
     fprintf(stderr, "Usage: elf_header elf_filename\n");
     exit(98);
@@ -47,3 +51,4 @@ int main(int argc, char *argv[]) {
   close(fd);
   return 0;
 }
+
