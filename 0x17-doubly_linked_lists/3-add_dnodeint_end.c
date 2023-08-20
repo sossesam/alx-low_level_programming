@@ -31,6 +31,6 @@ else
 new_node->prev = NULL;
 }
 
-
+free(temp);
 return (*head);
 }
