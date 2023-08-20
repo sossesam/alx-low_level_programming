@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * add_dnodeint_end- adds a new node to the end of a list
+ * @head: start of a list
+ * @n: data
+ * Return: return the list
+*/
 
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
