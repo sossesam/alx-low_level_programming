@@ -4,15 +4,16 @@
 int display_prompt(void)
 {
     size_t buff_count;
-    int fe;
     char *path;
     char *buffer;
     char **argu;
     int getline_result;
+    int pid;
     buff_count = 0;
     buffer = malloc(sizeof(char) * buff_count);
     buffer = NULL;
-    int pid = getpid();
+
+    pid = getpid();
 
 
 //printline("shell()$: ");

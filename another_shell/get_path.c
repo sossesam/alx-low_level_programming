@@ -2,6 +2,7 @@
 
 char *get_path(char *filename)
 {
+    int i;
     char *path1;
     char *path2;
     char **each_path;
@@ -14,7 +15,7 @@ char *get_path(char *filename)
     each_path = con_args(path2, " :");
     file_length = strlen(filename);
 
-    for(int i = 0; each_path[i] != NULL; i++)
+    for(i = 0; each_path[i] != NULL; i++)
     {
         path_length = strlen(each_path[i]);
         length = path_length + file_length + 2;

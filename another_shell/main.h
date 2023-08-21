@@ -1,7 +1,5 @@
 #ifndef MAIN_H
 #define MAIN_H
-#define LSH_TOK_BUFSIZE 64
-#define LSH_TOK_DELIM " \t\r\n\a"
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdio.h>

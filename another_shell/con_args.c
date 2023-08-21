@@ -17,6 +17,7 @@ char **con_args(char *line, char *delim)
     length = strlen(line);
     copied_line = strdup(line);
     tokens = malloc(sizeof(char *) * length);
+    token = NULL;
 
 
 
