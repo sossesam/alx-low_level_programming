@@ -20,6 +20,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key){
         {
             return table->value;
         }
+
+        if(table->key == NULL){
+            return table->value;
+        }
         table = table->next;
     }
 
