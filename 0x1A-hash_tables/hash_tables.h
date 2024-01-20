@@ -1,7 +1,9 @@
 #ifndef HASH_T
 #define HASH_T
 
-
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 
 /**
@@ -38,5 +40,6 @@ unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 hash_node_t *_node_(const char *key, const char *value);
-
+char *hash_table_get(const hash_table_t *ht, const char *key);
+char *strdup(const char *c);
 #endif
